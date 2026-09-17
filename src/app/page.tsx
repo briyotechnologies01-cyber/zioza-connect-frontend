@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
 import SocialMediaManagement from "@/components/SocialMediaManagement/SocialMediaManagement";
+import WhatsAppAutomation from "@/components/WhatsAppAutomation/WhatsAppAutomation";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <SocialMediaManagement />
+      <WhatsAppAutomation />
 
     </div>
   );
