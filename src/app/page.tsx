@@ -12,6 +12,7 @@ export default function Home() {
       <SocialMediaManagement />
       <WhatsAppAutomation />
       <UnifiedInbox />
+      <hr className="red-500  bg-red-500" />
     </div>
   );
 }
