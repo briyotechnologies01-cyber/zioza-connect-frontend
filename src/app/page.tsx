@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
 import SocialMediaManagement from "@/components/SocialMediaManagement/SocialMediaManagement";
+import UnifiedInbox from "@/components/UnifiedInbox/UnifiedInbox";
 import WhatsAppAutomation from "@/components/WhatsAppAutomation/WhatsAppAutomation";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <SocialMediaManagement />
       <WhatsAppAutomation />
+      <UnifiedInbox />
     </div>
   );
 }
