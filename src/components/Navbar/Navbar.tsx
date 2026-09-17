@@ -14,7 +14,7 @@ const navigationItems: NavItem[] = [
 
 export default function Navbar() {
     return (
-        <header className="absolute inset-x-0 top-[10px] z-30 flex min-h-[56px] items-center justify-between gap-6 bg-transparent px-[120px] max-[1400px]:px-10 max-[1000px]:px-[22px] max-[520px]:px-4">
+        <header className="absolute inset-x-0 top-[10px] z-30 mx-auto flex min-h-[56px] max-w-[1680px] items-center justify-between gap-6 bg-transparent px-4 sm:px-8 md:px-10 lg:px-16 xl:px-[120px]">
             {/* Logo */}
             <a className="inline-flex items-center shrink-0" href="#top" aria-label="Zioza home">
                 <Image

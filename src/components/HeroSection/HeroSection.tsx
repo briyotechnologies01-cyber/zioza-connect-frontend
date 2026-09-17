@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <main className="relative min-h-[640px] overflow-hidden bg-[#F6FBFEA1] max-[1000px]:min-h-0" id="top">
+        <main className="relative min-h-[580px] lg:min-h-[640px] overflow-hidden bg-[#F6FBFEA1] w-full" id="top">
 
             {/* Ellipse 1 — Background Gradient 1 */}
             <div
@@ -39,26 +39,26 @@ export default function HeroSection() {
                 </svg>
             </div>
 
-            <div className="relative z-10 grid grid-cols-[minmax(0,620px)_minmax(0,1fr)] items-center gap-10 px-[120px] pb-10 pt-[120px] max-[1400px]:gap-8 max-[1400px]:px-10 max-[1200px]:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] max-[1200px]:gap-6 max-[1000px]:grid-cols-1 max-[1000px]:px-[22px] max-[1000px]:pb-[50px] max-[1000px]:pt-[105px] max-[520px]:px-4 max-[520px]:pt-[95px]">
+            <div className="relative z-10 mx-auto max-w-[1680px] w-full grid grid-cols-1 lg:grid-cols-[minmax(0,480px)_minmax(0,1fr)] xl:grid-cols-[minmax(0,540px)_minmax(0,1fr)] 2xl:grid-cols-[minmax(0,620px)_minmax(0,1fr)] items-center gap-8 lg:gap-10 xl:gap-12 px-4 sm:px-8 md:px-10 lg:px-14 xl:px-[120px] pb-10 pt-[100px] lg:pt-[120px]">
 
                 {/* Left: text content */}
-                <div className="w-full max-w-[684px] max-[1000px]:mx-auto max-[1000px]:text-center">
-                    <div className="mb-[22px] inline-flex items-center gap-[15px] rounded-[28px] border border-[#0067FC] bg-[#FEFFFF] p-[8px] h-[34px]">
+                <div className="w-full max-w-[580px] 2xl:max-w-[684px] lg:text-left text-center mx-auto lg:mx-0">
+                    <div className="mb-4 lg:mb-5 inline-flex items-center gap-3 rounded-[28px] border border-[#0067FC] bg-[#FEFFFF] px-3.5 py-1.5 h-[34px]">
                         <Image
                             src="/ai-icon.svg"
                             alt="AI-Powered Omnichannel Platform"
-                            width={232}
+                            width={210}
                             height={12}
                             className="h-auto max-w-full"
                             priority
                         />
                     </div>
 
-                    <h1 className="m-0 font-[800] text-[42px] leading-[108%] tracking-[-1px] text-[#111827] max-[1400px]:text-[38px] max-[1150px]:text-[32px] max-[520px]:text-[28px]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
-                        <span className="block mb-[6px]">One Platform.</span>
-                        <span className="block mb-[6px]">Every Conversation.</span>
+                    <h1 className="m-0 font-[800] text-[26px] sm:text-[32px] lg:text-[34px] xl:text-[40px] 2xl:text-[44px] leading-[1.12] tracking-[-0.8px] text-[#111827]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                        <span className="block mb-1 sm:mb-1.5">One Platform.</span>
+                        <span className="block mb-1 sm:mb-1.5">Every Conversation.</span>
                         <span
-                            className="block bg-clip-text text-transparent whitespace-nowrap max-[1000px]:whitespace-normal"
+                            className="block bg-clip-text text-transparent"
                             style={{ backgroundImage: 'linear-gradient(to right, #0067FC, #8463F3)' }}
                         >
                             Smarter Customer Engagement.
@@ -66,15 +66,15 @@ export default function HeroSection() {
                     </h1>
 
                     <p
-                        className="mb-[30px] mt-[20px] max-w-[650px] text-[18px] leading-[28px] tracking-[0px] text-[#555555] max-[1000px]:mx-auto max-[520px]:text-[15px] max-[520px]:leading-6"
+                        className="my-4 lg:my-6 max-w-[560px] text-[14px] sm:text-[15px] lg:text-[15px] xl:text-[17px] 2xl:text-[18px] leading-relaxed tracking-[0px] text-[#555555] lg:mx-0 mx-auto"
                         style={{ fontFamily: 'Segoe UI, sans-serif', fontWeight: 400 }}
                     >
                         Manage all your messages, automate conversations, create engaging content, and turn customer interactions into lasting relationships — all in one place.
                     </p>
 
-                    <div className="flex items-center gap-[18px] max-[1000px]:justify-center max-[520px]:flex-col max-[520px]:items-stretch">
+                    <div className="flex items-center gap-3 lg:gap-4 lg:justify-start justify-center max-[520px]:flex-col max-[520px]:items-stretch">
                         <a
-                            className="inline-flex h-[56px] w-[225px] items-center justify-center gap-[4px] rounded-[38px] bg-[#0067FC] border border-[#0067FC] p-[10px] text-[18px] font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,103,252,0.25)] max-[520px]:w-full"
+                            className="inline-flex h-[46px] lg:h-[50px] xl:h-[56px] px-6 items-center justify-center gap-1.5 rounded-[38px] bg-[#0067FC] border border-[#0067FC] text-[15px] lg:text-[16px] xl:text-[18px] font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,103,252,0.25)] max-[520px]:w-full"
                             href="#get-started"
                             style={{ fontFamily: 'Inter, sans-serif' }}
                         >
@@ -83,7 +83,7 @@ export default function HeroSection() {
                         </a>
 
                         <a
-                            className="inline-flex h-[56px] w-[211px] items-center justify-center gap-[4px] rounded-[38px] border border-[#0067FC] p-[10px] text-[18px] font-semibold text-[#0067FC] transition hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,103,252,0.15)] max-[520px]:w-full"
+                            className="inline-flex h-[46px] lg:h-[50px] xl:h-[56px] px-6 items-center justify-center gap-1.5 rounded-[38px] border border-[#0067FC] text-[15px] lg:text-[16px] xl:text-[18px] font-semibold text-[#0067FC] transition hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,103,252,0.15)] max-[520px]:w-full"
                             href="#demo"
                             style={{ fontFamily: 'Inter, sans-serif' }}
                         >
@@ -93,15 +93,15 @@ export default function HeroSection() {
                 </div>
 
                 {/* Right: unified inbox mockup */}
-                <div className="flex min-w-0 items-center justify-end max-[1000px]:mt-8 max-[1000px]:justify-center max-[520px]:mt-5">
+                <div className="flex min-w-0 items-center justify-center ml-0 lg:ml-6 xl:ml-12 2xl:ml-[120px] lg:justify-end mt-6 lg:mt-0 w-full">
                     <Image
                         src="/Hero/hero-bg-image.png"
                         alt="Zioza unified inbox dashboard"
-                        className="relative z-10 h-auto w-[min(762px,100%)] max-w-full object-contain max-[1200px]:w-[min(600px,100%)] max-[1000px]:w-[min(680px,100%)] max-[520px]:w-full"
+                        className="relative z-10 h-auto w-full max-w-[620px] lg:max-w-[680px] xl:max-w-[762px] object-contain"
                         width={762}
                         height={624}
                         priority
-                        sizes="(max-width: 1000px) 95vw, 55vw"
+                        sizes="(max-width: 1000px) 95vw, (max-width: 1400px) 50vw, 762px"
                     />
                 </div>
             </div>

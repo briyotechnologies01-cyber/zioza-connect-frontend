@@ -5,12 +5,11 @@ import WhatsAppAutomation from "@/components/WhatsAppAutomation/WhatsAppAutomati
 
 export default function Home() {
   return (
-    <div className="landing-page">
+    <div className="landing-page w-full overflow-x-hidden min-h-screen">
       <Navbar />
       <HeroSection />
       <SocialMediaManagement />
       <WhatsAppAutomation />
-
     </div>
   );
 }
