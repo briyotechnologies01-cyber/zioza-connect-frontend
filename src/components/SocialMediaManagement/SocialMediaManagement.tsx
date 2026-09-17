@@ -19,7 +19,7 @@ const channels: Channel[] = [
 
 export default function SocialMediaManagement() {
     return (
-        <section className="relative w-full bg-[#FFFFFF] px-4 sm:px-8 md:px-10 lg:px-16 xl:px-[120px] py-[60px] lg:py-[80px]">
+        <section className="relative w-full bg-[#FFFFFF] px-[120px] py-[80px] max-[1400px]:px-10 max-[1000px]:px-[22px] max-[768px]:py-[50px] max-[550px]:px-4">
             <div className="mx-auto max-w-[1680px] w-full">
 
                 {/* Section Header */}
@@ -39,7 +39,7 @@ export default function SocialMediaManagement() {
                 </div>
 
                 {/* Channel Cards Grid Layout */}
-                <div className="grid w-full grid-cols-9 gap-5 max-[1600px]:gap-[14px] max-[1280px]:grid-cols-5 max-[1280px]:gap-3 max-[900px]:grid-cols-3 max-[768px]:gap-3 max-[550px]:grid-cols-2 max-[550px]:gap-2">
+                <div className="grid w-full grid-cols-9 gap-5 max-[1600px]:gap-[14px] max-[1280px]:gap-3 max-[1000px]:grid-cols-3 max-[768px]:gap-3 max-[550px]:grid-cols-2 max-[550px]:gap-2">
                     {channels.map((channel) => (
                         <div
                             key={channel.name}
