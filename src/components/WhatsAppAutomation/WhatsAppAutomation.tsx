@@ -25,51 +25,49 @@ const useCases = [
 
 export default function WhatsAppAutomation() {
     return (
-        <section className="bg-[#EFFDF9] px-[120px] pt-[80px] max-[1400px]:px-10 max-[1200px]:pb-[70px] max-[1000px]:px-[22px] max-[768px]:px-4 max-[768px]:py-[50px]">
-            <div className="mx-auto grid max-w-[1680px] grid-cols-[532px_minmax(0,1fr)] items-start gap-[210px] max-[1400px]:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] max-[1400px]:gap-[70px] max-[1200px]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] max-[1200px]:gap-[60px] max-[768px]:grid-cols-1 max-[768px]:gap-10">
+        <section className="bg-[#EFFDF9] px-[120px] max-[1400px]:px-10 max-[1000px]:px-[22px] max-[768px]:px-4 pt-[60px] lg:pt-[80px] w-full">
+            <div className="mx-auto grid max-w-[1680px] grid-cols-1 lg:grid-cols-[minmax(0,460px)_minmax(0,1fr)] xl:grid-cols-[minmax(0,532px)_minmax(0,1fr)] items-center gap-8 lg:gap-12 xl:gap-20 2xl:gap-[160px] w-full">
 
                 {/* Left Column: WhatsApp Chat Image */}
-                <div className="flex items-start justify-center max-[768px]:mx-auto max-[768px]:w-full">
+                <div className="flex items-center justify-center w-full">
                     <Image
                         src="/whatsap-chat-app.png"
                         alt="WhatsApp appointment booking conversation"
                         width={532}
                         height={539}
-                        className="h-auto w-full max-w-[532px] object-contain max-[1400px]:max-w-[420px] max-[1200px]:max-w-[400px] max-[768px]:max-w-[420px] max-[480px]:max-w-[360px]"
+                        className="h-auto w-full max-w-[420px] lg:max-w-[460px] xl:max-w-[532px] object-contain"
                     />
                 </div>
 
                 {/* Right Column: Content & Use Case Grid */}
-                <div className="mt-[51px] min-w-0 max-w-[930px] max-[1400px]:pr-0 max-[1200px]:mt-0 max-[768px]:mx-auto max-[768px]:w-full max-[768px]:text-center">
-                    <span className="inline-flex h-[34px] w-[140px] items-center justify-center rounded-[28px] border border-[#059669] p-2 text-[14px] font-semibold leading-4 text-[#059669] bg-[#EFFDF9]">
+                <div className="min-w-0 w-full max-w-[930px] lg:text-left text-center mx-auto">
+                    <span className="inline-flex h-[34px] items-center justify-center rounded-[28px] border border-[#059669] px-4 text-[14px] font-semibold text-[#059669] bg-[#EFFDF9]">
                         WhatsApp Flows
                     </span>
-                    <h2 className="mt-[18px] max-w-[457px] text-[40px] font-extrabold leading-[50px] tracking-[-0.5px] text-[#111827] max-[1400px]:text-[28px] max-[1400px]:leading-[34px] max-[768px]:mx-auto max-[768px]:text-[28px] max-[768px]:leading-[1.08] max-[480px]:text-[26px]">
-                        <span className="whitespace-nowrap max-[768px]:whitespace-normal">Automate Your Customer</span>
-                        <br />
-                        <span className="whitespace-nowrap max-[768px]:whitespace-normal">Journeys with WhatsApp</span>
+                    <h2 className="mt-4 text-[26px] sm:text-[32px] lg:text-[36px] xl:text-[40px] font-extrabold leading-[1.15] tracking-[-0.5px] text-[#111827]">
+                        Automate Your Customer<br className="hidden sm:inline" /> Journeys with WhatsApp
                     </h2>
-                    <p className="mt-[18px] max-w-[415px] text-[18px] leading-[26px] text-[#555555] max-[1400px]:text-[14px] max-[1400px]:leading-5 max-[768px]:mx-auto max-[480px]:text-[16px] max-[480px]:leading-6">
+                    <p className="mt-3 max-w-[500px] text-[15px] sm:text-[16px] xl:text-[18px] leading-relaxed text-[#555555] lg:mx-0 mx-auto">
                         More than just chat — enable real business flows inside WhatsApp.
                     </p>
 
-                    {/* 4-Column Feature Cards Grid */}
-                    <div className="mt-[30px] grid grid-cols-[repeat(4,219px)] gap-[14px] max-[1400px]:grid-cols-4 max-[1400px]:gap-3 max-[1200px]:grid-cols-2 max-[768px]:text-left max-[480px]:grid-cols-1">
+                    {/* Feature Cards Grid */}
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-3.5 sm:gap-4 w-full">
                         {useCases.map((useCase) => (
                             <div
                                 key={useCase.label}
-                                className="flex h-[126px] w-[219px] flex-col justify-between rounded-[12px] border border-[#F3F4F6] bg-white p-[14px] shadow-[0_6px_16px_rgba(17,24,39,0.05)] max-[1400px]:w-full max-[480px]:h-[116px]"
+                                className="flex min-h-[120px] flex-col justify-between rounded-[12px] border border-[#F3F4F6] bg-white p-4 shadow-[0_6px_16px_rgba(17,24,39,0.05)] transition-shadow hover:shadow-md"
                             >
-                                <div className={`flex h-[30px] w-[30px] items-center justify-center rounded-[50%] ${useCase.iconBg}`}>
+                                <div className={`flex h-[34px] w-[34px] items-center justify-center rounded-full ${useCase.iconBg} mb-2 shrink-0`}>
                                     <Image
                                         src={useCase.icon}
                                         alt={useCase.label}
-                                        width={100}
-                                        height={100}
-                                        className="h-[100px] w-[100px] object-contain max-[480px]:h-20 max-[480px]:w-20"
+                                        width={24}
+                                        height={24}
+                                        className="h-5 w-5 object-contain"
                                     />
                                 </div>
-                                <p className="text-[18px] font-bold leading-6 text-[#111827] max-[1400px]:text-[14px] max-[1400px]:leading-5 max-[480px]:text-[14px] max-[480px]:leading-5">
+                                <p className="text-[14px] sm:text-[15px] xl:text-[16px] font-bold leading-snug text-[#111827] text-left">
                                     {useCase.label}
                                 </p>
                             </div>
