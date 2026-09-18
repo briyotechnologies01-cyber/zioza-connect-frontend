@@ -62,9 +62,9 @@ export default function WhatsAppAutomation() {
                                     <Image
                                         src={useCase.icon}
                                         alt={useCase.label}
-                                        width={24}
-                                        height={24}
-                                        className="h-5 w-5 object-contain"
+                                        width={34}
+                                        height={34}
+                                        className="h-10 w-10 object-contain"
                                     />
                                 </div>
                                 <p className="text-[14px] sm:text-[15px] xl:text-[16px] font-bold leading-snug text-[#111827] text-left">

@@ -45,12 +45,12 @@ export default function SocialMediaManagement() {
                             key={channel.name}
                             className="group flex h-[126px] cursor-pointer flex-col items-center justify-center rounded-[10px] border border-[#F3F4F6] bg-white p-3 shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#0067FC]/30 hover:shadow-[0_12px_28px_rgba(0,103,252,0.12)] max-[1000px]:h-[116px] max-[768px]:h-[112px] max-[550px]:h-[104px] max-[550px]:p-2"
                         >
-                            <div className="relative mb-[6px] flex h-[44px] w-[72px] shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-105 max-[768px]:h-[40px] max-[768px]:w-[64px] max-[550px]:mb-1 max-[550px]:h-[34px] max-[550px]:w-[56px]">
+                            <div className="relative mb-[6px] flex h-[60px] w-[60px] shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-105 max-[768px]:h-[40px] max-[768px]:w-[64px] max-[550px]:mb-1 max-[550px]:h-[34px] max-[550px]:w-[56px]">
                                 <Image
                                     src={channel.icon}
                                     alt={channel.name}
-                                    width={72}
-                                    height={44}
+                                    width={60}
+                                    height={60}
                                     className="w-full h-full object-contain"
                                     priority
                                 />

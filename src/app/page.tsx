@@ -1,4 +1,5 @@
 import AICustomerSupport from "@/components/AICustomerSupport/AICustomerSupport";
+import ContentCalendar from "@/components/ContentCalendar/ContentCalendar";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
 import SocialMediaManagement from "@/components/SocialMediaManagement/SocialMediaManagement";
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatsAppAutomation />
       <UnifiedInbox />
       <AICustomerSupport />
+      <ContentCalendar />
     </div>
   );
 }
