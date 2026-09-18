@@ -25,8 +25,8 @@ export default function SocialMediaManagement() {
                 {/* Section Header */}
                 <div className="text-center mb-[18px]">
                     <h2
-                        className="mb-[12px] text-[40px] font-extrabold tracking-[-0.5px] text-[#010101] max-[1000px]:text-[34px] max-[768px]:text-[28px] max-[550px]:text-[24px]"
-                        style={{ fontFamily: 'Inter, sans-serif' }}
+                        className="mb-[12px] text-[40px] font-extrabold tracking-[-0.5px] text-[#010101] max-[1000px]:text-[34px] max-[768px]:text-[28px] max-[550px]:text-[24px] font-roboto"
+
                     >
                         Connect All Your Customer Channels in One Place
                     </h2>

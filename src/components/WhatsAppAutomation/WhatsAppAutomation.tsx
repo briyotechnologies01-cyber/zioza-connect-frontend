@@ -44,7 +44,7 @@ export default function WhatsAppAutomation() {
                     <span className="inline-flex h-[34px] items-center justify-center rounded-[28px] border border-[#059669] px-4 text-[14px] font-semibold text-[#059669] bg-[#EFFDF9]">
                         WhatsApp Flows
                     </span>
-                    <h2 className="mt-4 text-[26px] sm:text-[32px] lg:text-[36px] xl:text-[40px] font-extrabold leading-[1.15] tracking-[-0.5px] text-[#111827]">
+                    <h2 className="mt-4 text-[26px] sm:text-[32px] lg:text-[36px] xl:text-[40px] font-extrabold leading-[1.15] tracking-[-0.5px] text-[#111827] font-roboto">
                         Automate Your Customer<br className="hidden sm:inline" /> Journeys with WhatsApp
                     </h2>
                     <p className="mt-3 max-w-[500px] text-[15px] sm:text-[16px] xl:text-[18px] leading-relaxed text-[#555555] lg:mx-0 mx-auto">

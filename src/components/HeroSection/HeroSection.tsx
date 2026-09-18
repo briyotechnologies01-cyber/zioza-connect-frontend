@@ -54,7 +54,7 @@ export default function HeroSection() {
                         />
                     </div>
 
-                    <h1 className="m-0 font-[800] text-[42px] leading-[115%] tracking-[-1px] text-[#111827] max-[1400px]:text-[38px] max-[1150px]:text-[32px] max-[520px]:text-[28px]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                    <h1 className="m-0 font-[800] text-[42px] leading-[115%] tracking-[-1px] text-[#111827] max-[1400px]:text-[38px] max-[1150px]:text-[32px] max-[520px]:text-[28px] font-roboto" >
                         <span className="block mb-[6px]">One Platform.</span>
                         <span className="block mb-[6px]">Every Conversation.</span>
                         <span
