@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Roboto } from "next/font/google";
+import Image from "next/image";
 
 const roboto = Roboto({
     subsets: ["latin"],
@@ -29,7 +29,7 @@ const aiFeatures = [
 export default function AICustomerSupport() {
     return (
         <section
-            className={`w-full relative overflow-hidden px-[120px] max-[1400px]:px-10 max-[1000px]:px-[22px] max-[768px]:px-4 bg-white ${roboto.className}`}
+            className={`relative w-full overflow-hidden bg-white px-[120px] py-[80px] max-[1400px]:px-10 max-[1000px]:px-[22px] max-[768px]:px-4 max-[768px]:py-[52px] ${roboto.className}`}
             style={{
                 background: "linear-gradient(90deg, #E8F1FC 0%, #D6E1F3 100%)",
                 fontFamily: "var(--font-roboto), Roboto, sans-serif",
@@ -37,22 +37,22 @@ export default function AICustomerSupport() {
             id="ai-support"
         >
             {/* Inner Container: 1680px max-width, responsive gap from tight on laptops to 231px on 1920px screens */}
-            <div className="mx-auto flex flex-col min-[900px]:flex-row items-center justify-between max-w-[1680px] w-full gap-8 lg:gap-10 xl:gap-12 2xl:gap-[231px]">
+            <div className="mx-auto grid w-full max-w-[1680px] grid-cols-1 items-start gap-8 min-[900px]:grid-cols-2 lg:gap-10 xl:gap-12 min-[1800px]:h-[502px] min-[1800px]:gap-[231px]">
 
                 {/* Left Column: AI Character Visual (Large & filling space on 900px-1600px screens) */}
-                <div className="hidden min-[900px]:flex items-center justify-center w-full min-[900px]:flex-1 2xl:max-w-[728px] py-2 lg:py-4 2xl:py-[80px]">
+                <div className="hidden w-full overflow-hidden min-[900px]:flex min-[1800px]:h-full">
                     <Image
                         src="/ai powerd.png"
                         alt="AI-Powered Customer Support Assistant"
                         width={758}
                         height={550}
-                        className="w-full max-w-[560px] lg:max-w-[660px] xl:max-w-[720px] 2xl:max-w-[728px] h-auto object-contain drop-shadow-md transition-transform duration-300 hover:scale-[1.02]"
+                        className="h-auto w-full origin-bottom scale-[1.08] object-contain drop-shadow-md min-[1800px]:h-full"
                         priority
                     />
                 </div>
 
                 {/* Right Column: Consistent Left Alignment */}
-                <div className="w-full min-[900px]:flex-1 2xl:max-w-[728px] text-left flex flex-col items-start py-2 lg:py-4 2xl:py-[94px]">
+                <div className="flex w-full flex-col items-start text-left">
                     {/* Badge: Frame 25 */}
                     <div className="w-[235px] max-[550px]:w-auto max-[550px]:px-4 h-[34px] rounded-[28px] border border-[#0067FC] px-[15px] py-[8px] bg-[#EFF6FF] flex items-center justify-center">
                         <span className="text-[14px] max-[550px]:text-[13px] font-semibold text-[#0067FC] leading-none whitespace-nowrap font-roboto">
@@ -71,7 +71,7 @@ export default function AICustomerSupport() {
                     </p>
 
                     {/* 2x2 Feature Cards Grid */}
-                    <div className="mt-[18px] max-[768px]:mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4 2xl:gap-x-[28px] 2xl:gap-y-[18px] w-full max-w-[728px] text-left">
+                    <div className="mt-[18px] max-[768px]:mt-5 grid w-full max-w-[728px] grid-cols-1 gap-4 text-left min-[1150px]:grid-cols-2 min-[1800px]:gap-x-[28px] min-[1800px]:gap-y-[18px]">
                         {aiFeatures.map((feature) => (
                             <div
                                 key={feature.title}
